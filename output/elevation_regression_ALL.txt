@@ -1,0 +1,150 @@
+
+### precipitation_mm: peak lag vs each attribute   (n=26)
+
+    r(peak_lag, mean_elevation_m    ) = -0.291   spearman = -0.266
+
+    r(peak_lag, catchment_area_km2  ) = +0.256   spearman = -0.069
+
+    r(peak_lag, frac_snow           ) = -0.440   spearman = -0.624
+
+    r(peak_lag, glac_area           ) = -0.219   spearman = -0.457
+
+    r(peak_lag, p_mean              ) = -0.233   spearman = -0.043
+
+    r(peak_lag, aridity             ) = +0.379   spearman = +0.499
+
+    r(peak_lag, mean_slope          ) = -0.589   spearman = -0.653
+
+
+### OLS: peak lag of precipitation_mm ~ mean_elevation_m + catchment_area_km2 + frac_snow   (n=26)
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          peak_lag_days   R-squared:                       0.320
+Model:                            OLS   Adj. R-squared:                  0.227
+Method:                 Least Squares   F-statistic:                     3.452
+Date:                Sat, 05 Sep 2026   Prob (F-statistic):             0.0340
+Time:                        18:19:56   Log-Likelihood:                -64.666
+No. Observations:                  26   AIC:                             137.3
+Df Residuals:                      22   BIC:                             142.4
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+const                  6.1299      1.283      4.779      0.000       3.470       8.790
+mean_elevation_m       0.0015      0.002      0.779      0.444      -0.003       0.006
+catchment_area_km2     0.0004      0.000      2.005      0.057   -1.44e-05       0.001
+frac_snow            -15.2601      5.914     -2.580      0.017     -27.524      -2.996
+==============================================================================
+Omnibus:                        0.641   Durbin-Watson:                   1.653
+Prob(Omnibus):                  0.726   Jarque-Bera (JB):                0.723
+Skew:                           0.257   Prob(JB):                        0.697
+Kurtosis:                       2.365   Cond. No.                     3.96e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.96e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+### temperature_mean_c: peak lag vs each attribute   (n=26)
+
+    r(peak_lag, mean_elevation_m    ) = -0.288   spearman = -0.276
+
+    r(peak_lag, catchment_area_km2  ) = +0.410   spearman = +0.333
+
+    r(peak_lag, frac_snow           ) = -0.237   spearman = -0.166
+
+    r(peak_lag, glac_area           ) = -0.064   spearman = +0.106
+
+    r(peak_lag, p_mean              ) = -0.237   spearman = -0.229
+
+    r(peak_lag, aridity             ) = +0.308   spearman = +0.389
+
+    r(peak_lag, mean_slope          ) = -0.255   spearman = -0.234
+
+    peak correlation POSITIVE at mean elevation 968 m (n=9), NEGATIVE at 433 m (n=17)
+
+
+### OLS: peak lag of temperature_mean_c ~ mean_elevation_m + catchment_area_km2 + frac_snow   (n=26)
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          peak_lag_days   R-squared:                       0.264
+Model:                            OLS   Adj. R-squared:                  0.163
+Method:                 Least Squares   F-statistic:                     2.626
+Date:                Sat, 05 Sep 2026   Prob (F-statistic):             0.0758
+Time:                        18:19:56   Log-Likelihood:                -107.60
+No. Observations:                  26   AIC:                             223.2
+Df Residuals:                      22   BIC:                             228.2
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+const                 16.1608      6.686      2.417      0.024       2.294      30.028
+mean_elevation_m       0.0028      0.010      0.271      0.789      -0.019       0.024
+catchment_area_km2     0.0025      0.001      2.275      0.033       0.000       0.005
+frac_snow            -43.8533     30.828     -1.422      0.169    -107.788      20.081
+==============================================================================
+Omnibus:                        8.437   Durbin-Watson:                   1.227
+Prob(Omnibus):                  0.015   Jarque-Bera (JB):                6.611
+Skew:                           1.167   Prob(JB):                       0.0367
+Kurtosis:                       3.812   Cond. No.                     3.96e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.96e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+### snowmelt_proxy: peak lag vs each attribute   (n=22)
+
+    r(peak_lag, mean_elevation_m    ) = -0.083   spearman = +0.082
+
+    r(peak_lag, catchment_area_km2  ) = +0.143   spearman = -0.084
+
+    r(peak_lag, frac_snow           ) = +0.126   spearman = -0.212
+
+    r(peak_lag, glac_area           ) = +0.500   spearman = -0.150
+
+    r(peak_lag, p_mean              ) = +0.101   spearman = +0.026
+
+    r(peak_lag, aridity             ) = -0.228   spearman = +0.059
+
+    r(peak_lag, mean_slope          ) = +0.111   spearman = -0.337
+
+    peak correlation POSITIVE at mean elevation 673 m (n=21), NEGATIVE at 561 m (n=1)
+
+
+### OLS: peak lag of snowmelt_proxy ~ mean_elevation_m + catchment_area_km2 + frac_snow   (n=22)
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          peak_lag_days   R-squared:                       0.062
+Model:                            OLS   Adj. R-squared:                 -0.095
+Method:                 Least Squares   F-statistic:                    0.3952
+Date:                Sat, 05 Sep 2026   Prob (F-statistic):              0.758
+Time:                        18:19:56   Log-Likelihood:                -84.812
+No. Observations:                  22   AIC:                             177.6
+Df Residuals:                      18   BIC:                             182.0
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+======================================================================================
+                         coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------------
+const                  7.2218      5.263      1.372      0.187      -3.835      18.278
+mean_elevation_m      -0.0059      0.008     -0.742      0.468      -0.023       0.011
+catchment_area_km2     0.0003      0.001      0.255      0.802      -0.002       0.002
+frac_snow             20.9783     24.337      0.862      0.400     -30.151      72.108
+==============================================================================
+Omnibus:                       44.517   Durbin-Watson:                   2.393
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              173.512
+Skew:                           3.405   Prob(JB):                     2.10e-38
+Kurtosis:                      14.955   Cond. No.                     2.82e+04
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.82e+04. This might indicate that there are
+strong multicollinearity or other numerical problems.
