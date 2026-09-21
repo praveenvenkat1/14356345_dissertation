@@ -1,0 +1,78 @@
+table,column,description,unit,source,dtype
+lakes_daily,gauge_id,BAFU station ID,-,CAMELS-CH stations,int64
+lakes_daily,water_body,Lake name,-,CAMELS-CH stations,object
+lakes_daily,regulation_tier,N0/N1/R natural classification,-,DERIVED from human-influence attributes,object
+lakes_daily,date,Observation date,date,CAMELS-CH observation_based,datetime64[ns]
+lakes_daily,discharge_m3s,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_daily,discharge_spec(mm/d),See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_daily,waterlevel_m,Water level after QC and gap handling,m,DERIVED,float64
+lakes_daily,precipitation_mm,Catchment daily precipitation,mm/d,CAMELS-CH / MeteoSwiss,float64
+lakes_daily,temperature_min_c,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_daily,temperature_mean_c,Catchment mean air temperature,degC,CAMELS-CH / MeteoSwiss,float64
+lakes_daily,temperature_max_c,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_daily,rel_sun_dur_pct,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_daily,swe_mm,Snow water equivalent,mm,CAMELS-CH / SLF,float64
+lakes_daily,waterlevel_raw_m,Water level as published,m,CAMELS-CH / BAFU,float64
+lakes_daily,qc_flag,ok/spike/flatline/interp_short/interp_seasonal/gap_long,-,DERIVED,object
+lakes_daily,api_30,"Antecedent precipitation index, 30d halflife",mm,DERIVED,float64
+lakes_daily,api_60,"Antecedent precipitation index, 60d halflife",mm,DERIVED,float64
+lakes_daily,api_90,"Antecedent precipitation index, 90d halflife",mm,DERIVED,float64
+lakes_daily,snowmelt_proxy,SWE decrease on days above 0 degC,mm/d,DERIVED,float64
+lakes_daily,snowmelt_cum30,30-day cumulative snowmelt proxy,mm,DERIVED,float64
+lakes_daily,degree_days,Mean temperature floored at zero,degC,DERIVED,float64
+lakes_daily,cdd_30,30-day cumulative degree-days,degC.d,DERIVED,float64
+lakes_daily,level_lag1,Water level lagged 1 days,m,DERIVED,float64
+lakes_daily,level_lag3,Water level lagged 3 days,m,DERIVED,float64
+lakes_daily,level_lag7,Water level lagged 7 days,m,DERIVED,float64
+lakes_daily,level_lag14,Water level lagged 14 days,m,DERIVED,float64
+lakes_daily,level_lag30,Water level lagged 30 days,m,DERIVED,float64
+lakes_daily,level_roll7_mean,Rolling level_roll7_mean of past levels,m,DERIVED,float64
+lakes_daily,level_roll7_std,Rolling level_roll7_std of past levels,m,DERIVED,float64
+lakes_daily,level_roll30_mean,Rolling level_roll30_mean of past levels,m,DERIVED,float64
+lakes_daily,level_roll30_std,Rolling level_roll30_std of past levels,m,DERIVED,float64
+lakes_daily,level_delta1,Day-on-day level change,m,DERIVED,float64
+lakes_daily,doy_sin,"Cyclical day-of-year, sine",-,DERIVED,float64
+lakes_daily,doy_cos,"Cyclical day-of-year, cosine",-,DERIVED,float64
+lakes_static,gauge_id,BAFU station ID,-,CAMELS-CH stations,Int64
+lakes_static,ID6,See CAMELS-CH documentation,-,CAMELS-CH,object
+lakes_static,gauge_name,See CAMELS-CH documentation,-,CAMELS-CH,object
+lakes_static,water_body,Lake name,-,CAMELS-CH stations,object
+lakes_static,type,See CAMELS-CH documentation,-,CAMELS-CH,object
+lakes_static,country,See CAMELS-CH documentation,-,CAMELS-CH,object
+lakes_static,ORIG_FID,See CAMELS-CH documentation,-,CAMELS-CH,int64
+lakes_static,lon,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,lat,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,n_inhabitants,See CAMELS-CH documentation,-,CAMELS-CH,int64
+lakes_static,dens_inhabitants,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,hp_count,See CAMELS-CH documentation,-,CAMELS-CH,int64
+lakes_static,hp_qturb,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,hp_inst_turb,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,hp_max_power,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,num_reservoir,See CAMELS-CH documentation,-,CAMELS-CH,int64
+lakes_static,reservoir_cap,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,reservoir_he,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,reservoir_fs,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,reservoir_irr,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,reservoir_nousedata,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,reservoir_year_first,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,reservoir_year_last,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,catchment_area_km2,Catchment area,km2,CAMELS-CH topographic,float64
+lakes_static,mean_elevation_m,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,mean_slope,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,specific_storage_mm,Upstream reservoir capacity per catchment area,mm,DERIVED,float64
+lakes_static,regulation_tier,N0/N1/R natural classification,-,DERIVED from human-influence attributes,object
+lakes_static,glac_area,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,glac_area_neighbours,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,p_mean,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,pet_mean,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,aridity,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,frac_snow,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,crop_perc,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,inwater_perc,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,ice_perc,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,loose_rock_perc,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,rock_perc,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,pct_complete_raw,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,pct_usable_final,See CAMELS-CH documentation,-,CAMELS-CH,float64
+lakes_static,start,See CAMELS-CH documentation,-,CAMELS-CH,object
+lakes_static,end,See CAMELS-CH documentation,-,CAMELS-CH,object

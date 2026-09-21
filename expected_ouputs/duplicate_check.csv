@@ -1,6 +1,0 @@
-water_body,gauge_a,gauge_b,n_days,corr_level,corr_daily_change,mean_offset_m
-Lac_Léman,2027,2028,14610,0.9981,0.8801,0.003
-Lac_de_Neuchâtel,2154,2642,14610,0.9938,0.8397,0.001
-Lago_Maggiore,2022,2074,14610,0.998,0.9553,0.002
-Lago_di_Lugano,2021,2101,14608,0.9835,0.855,-0.009
-Vierwaldstättersee,2025,2207,14610,0.994,0.9344,-0.005
